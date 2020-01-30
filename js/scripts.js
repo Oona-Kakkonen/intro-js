@@ -40,13 +40,16 @@ function getUserDataObj() {
 }
 
 function renderRegisteredUsers() {
-  $("#registered-users").append("");
-  /* document.getElementById("registered-users").innerHTML = ""; */
+  $("#registered-users").empty();
+  /*  document.getElementById("registered-users").innerHTML = ""; */
 
   registeredUsers.forEach(function(registeredUser) {
-    var _newUser = document.createElement("li");
+    $("<li>")
+      .text(JSON.stringify(registeredUser))
+      .appendTo("#registered-users");
+    /*     var _newUser = document.createElement("li");
     _newUser.innerHTML = JSON.stringify(registeredUser);
-    document.getElementById("registered-users").appendChild(_newUser);
+    document.getElementById("registered-users").appendChild(_newUser); */
   });
 }
 
