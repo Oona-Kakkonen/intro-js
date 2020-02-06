@@ -39,4 +39,15 @@ jQuery(document).ready(function() {
   //Change 'People' to 'Personnel' in navbar and topic
   $(".navbar li a:contains(people)").text("Personnel");
   $("#people .headline").text("Personnel");
+
+  //weather
+  $.ajax({
+    url:
+      "http://api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=59961194e7b76e1d944a7885be6e64a9"
+  }).done(function(resp) {
+    console.log(resp);
+    $("#weather-button").text(
+      resp.name + " is today " + resp.main.temp + " and it feels like "
+    ) + resp.main.feels_like;
+  });
 });

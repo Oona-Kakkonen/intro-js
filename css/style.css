@@ -114,6 +114,36 @@ a:hover {
   color: #fff;
 }
 
+/* Styling for weather-button */
+#weather-button {
+  display: inline-block;
+  background-color: orange;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 270px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+#weather-button:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+#weather-button::after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
 em {
   font-weight: 700;
   font-size: 140%;
