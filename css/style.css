@@ -54,7 +54,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* BUTTON */
+/* Styling for button */
 #button {
   display: inline-block;
   background-color: orange;
@@ -76,6 +76,36 @@ a:hover {
 
 #button::after {
   content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+/* Styling for print-button */
+#print-button {
+  display: inline-block;
+  background-color: orange;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+#print-button:hover {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+#print-button::after {
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
