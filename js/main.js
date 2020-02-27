@@ -13,7 +13,8 @@
       document.getElementById("popup1").style.visibility = "hidden";
     });
 
-  document
+  // Add e-mail validation
+  /* document
     .getElementById("subscribe_popup")
     .getElementsByClassName("button")[0]
     .addEventListener("click", function() {
@@ -24,7 +25,7 @@
         document.getElementById("popup1").style.visibility = "hidden";
         document.getElementById("popup2").style.visibility = "visible";
       }
-    });
+    }); */
 
   // bootstrap dropdown hover
 
