@@ -1483,6 +1483,7 @@ main {
 }
 
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+
 .overlay {
   position: fixed;
   top: 0;
@@ -1522,6 +1523,7 @@ main {
   margin-top: 0;
   color: #333;
 }
+
 #popup1 .popup .close,
 #popup2 .popup .close {
   position: absolute;

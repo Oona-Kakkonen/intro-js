@@ -24,7 +24,7 @@
 
 <body>
   <div id="popup2" class="overlay">
-    <div class="popup"> <a class="close" href="#">&times;</a>
+    <div class="popup"> <a class="close" id="closepopup2" href="#">&times;</a>
       <div id="dialog" class="window">
 
         <div class="box">
@@ -43,7 +43,7 @@
     </div>
   </div>
   <div id="popup1" class="overlay">
-    <div class="popup"> <a class="close" href="#">&times;</a>
+    <div class="popup"> <a class="close" id="closenewsletter" href="#">&times;</a>
       <div id="dialog" class="window">
 
         <div class="box">
@@ -60,7 +60,7 @@
                   <input type="text" value="" name="subscribe_pemail" id="subscribe_pemail">
                   <input type="hidden" value="" name="subscribe_pname" id="subscribe_pname">
                   <div id="notification"></div>
-                  <a class="button" onclick="email_subscribepopup()"><span>Submit</span></a>
+                  <a class="button" onclick="email_subscribepopup()" id="submitbutton"><span>Submit</span></a>
                 </div>
               </form>
               <div class="subscribe-bottom">
@@ -267,7 +267,7 @@
 
     </div>
 
-    <aside style="background-image: url(img/profile_big.jpg);"></aside>
+    <aside id="photo" style="background-image: url(img/profile_big.jpg);"></aside>
     <main>
       <h1 class="mb-0">Hi, I'm Kate Woodman</h1>
       <div class="mb-5">
@@ -279,6 +279,9 @@
           corporis illum, ratione rerum quibusdam ea optio! Consectetur obcaecati facilis esse reprehenderit ipsam,
           facere dolorem incidunt.</p>
       </div>
+
+     
+
 
       <p>
         <a href="#" class="mr-2 mb-2">Twitter</a>
@@ -343,6 +346,9 @@
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/main.js"></script>
+
+
+
 
 </body>
 

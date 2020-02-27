@@ -1,15 +1,41 @@
 <p type="button" id="countRabbits" value="Count">dont click</p>
 
 <script>
-    function sayThanks(){
-        alert('Thanks');
-    }
+  function sayThanks() {
+    alert("Thanks");
+  }
 
-    function sayNoMore(){
-        alert('Nope');
-    }
+  function sayNoMore() {
+    alert("Nope");
+  }
 
-    countRabbits.addEventListener('click', sayThanks);
-    countRabbits.addEventListener('click', sayNoMore);
+  countRabbits.addEventListener("click", sayThanks);
+  countRabbits.addEventListener("click", sayNoMore);
 </script>
 
+<!-- My code for the task. Better option in main.js -->
+<!-- Mouse leave. Show popup1 -->
+<script>
+  document.addEventListener("mouseleave", function() {
+    // alert('mouse left');
+    popup1.style.visibility = "visible";
+  });
+
+  /* Close popup1 */
+  closenewsletter.addEventListener("click", function() {
+    popup1.style.visibility = "hidden";
+  });
+
+  // submit button. close popup1 and show popup2
+  /* email_subscribepopup() {
+    popup1.style.visibility = "hidden";
+  } */
+  submitbutton.addEventListener("click", function() {
+    popup1.style.visibility = "hidden";
+    popup2.style.visibility = "visible";
+  });
+  //close popup2
+  closepopup2.addEventListener("click", function() {
+    popup2.style.visibility = "hidden";
+  });
+</script>
