@@ -1578,6 +1578,10 @@ main {
   max-height: 30%;
   overflow: auto;
 }
+/* Changes here?? */
+#box3 {
+  overflow: scroll;
+}
 .newletter-title h2 {
   font-size: 24px;
   text-transform: uppercase;

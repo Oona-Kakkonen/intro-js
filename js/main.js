@@ -1,9 +1,13 @@
 (function($) {
   "use strict";
 
-  // Popups
-  document.addEventListener("mouseleave", function() {
+  // Popup1
+  /* document.addEventListener("mouseleave", function() {
     document.getElementById("popup1").style.visibility = "visible";
+  }); */
+
+  $(document).one("mouseleave", function() {
+    $("#popup1").css("visibility", "visible");
   });
 
   document
@@ -26,6 +30,43 @@
         document.getElementById("popup2").style.visibility = "visible";
       }
     }); */
+
+  // Popup3
+  /* document.addEventListener("click", function() {
+    document.getElementById("popup3").style.visibility = "visible";
+  });
+
+  document.getElementById("popup3").addEventListener("click", function() {
+    document.getElementById("close3").style.visibility = "visible";
+  }); */
+
+  // POPUP3
+  $(document).on("click", function() {
+    $("#popup3").css("visibility", "visible");
+  });
+
+  /* $("#popup3 .popup").scroll(function() {
+    alert("scroll!");
+  }); */
+
+  $("#popup3 .popup").scroll(function() {
+    if (
+      $("#popup3 .popup").scrollTop() + $("#popup3 .popup").height() ==
+      $("#popup3 .popup").height()
+    );
+    {
+      alert("bottom!");
+    }
+  });
+
+  /*  $("#popup3 .popup").on('scroll', function() {
+    if ($("#popup3 .popup").scrollTop() + $("#popup3 .popup").height()) == $("#popup3 #dialog").height();) {
+      alert("bottom!");
+    }
+  }); */
+  /* $("#popup3 .popup").on("scroll", function() {
+    console.log($("#popup3 .popup").scrollTop() + $("#popup3 .popup").height() == $("#popup3 #dialog").height());
+  }); */
 
   // bootstrap dropdown hover
 
