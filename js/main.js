@@ -41,7 +41,7 @@
   }); */
 
   // POPUP3
-  $(document).on("click", function() {
+  $("#photo").on("click", function() {
     $("#popup3").css("visibility", "visible");
   });
 
@@ -50,23 +50,20 @@
   }); */
 
   $("#popup3 .popup").scroll(function() {
-    if (
-      $("#popup3 .popup").scrollTop() + $("#popup3 .popup").height() ==
-      $("#popup3 .popup").height()
-    );
-    {
-      alert("bottom!");
+    var scrollAmount = $("#popup3 .popup").scrollTop();
+    var boxHeight = $("#popup3 .popup").height();
+    var height = $("#popup3 .box-content").height();
+    // console.log(Number(scrollAmount) + "   . " + Number(height));
+    if (scrollAmount + boxHeight >= height) {
+      $("#popup3 .close").css("visibility", "visible");
     }
   });
 
-  /*  $("#popup3 .popup").on('scroll', function() {
-    if ($("#popup3 .popup").scrollTop() + $("#popup3 .popup").height()) == $("#popup3 #dialog").height();) {
-      alert("bottom!");
-    }
-  }); */
-  /* $("#popup3 .popup").on("scroll", function() {
-    console.log($("#popup3 .popup").scrollTop() + $("#popup3 .popup").height() == $("#popup3 #dialog").height());
-  }); */
+  $("#popup3 .close").on("click", function() {
+    console.log("toimii");
+    $("#popup3").css("visibility", "hidden");
+    $("#popup3 .close").css("visibility", "hidden");
+  });
 
   // bootstrap dropdown hover
 
